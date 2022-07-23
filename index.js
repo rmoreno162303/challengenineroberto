@@ -1,6 +1,6 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
-const genMarkDown = require("./generateMarkdown.js");
+const generateMarkdown = require("./generateMarkdown.js");
 const fs = require('fs');
  const questions= [
         {
@@ -19,15 +19,15 @@ const fs = require('fs');
                 return "Please enter description of project."
             }},
         },
-        {
-            type: 'input',
-            name: 'contents',
-            message: 'Include a table of contents.',
-            default:false,
-            validate:(contents) =>{if(contents){return true;} else{
-                return "Please enter whether you would like a Table of Contents."
-            }},
-        },
+        // {
+        //     type: 'input',
+        //     name: 'contents',
+        //     message: 'Include a table of contents.',
+        //     default:false,
+        //     validate:(contents) =>{if(contents){return true;} else{
+        //         return "Please enter whether you would like a Table of Contents."
+        //     }},
+        // },
         {
             type: 'input',
             name: 'installation',
@@ -53,6 +53,17 @@ const fs = require('fs');
             }},
         },
         {
+            type: 'list',
+            name: 'license',
+            message: 'Select the licence for the project.',
+            choices: [
+                "Apache 2.0",
+                "GNU General Public",
+                "MIT License",
+                "Eclipse",
+            ]
+        },
+        {
             type: 'input',
             name: 'test',
             message: 'Provide test instructions.',
@@ -65,6 +76,16 @@ const fs = require('fs');
             name: 'questions',
             message: 'Provide information for questions.',
         },
+        {
+            type: 'input',
+            name: 'username',
+            message: 'Provide your Github username.',
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'Provide your email.',
+        },
         ];
 // TODO: Create an array of questions for user input
 
@@ -76,9 +97,10 @@ const fs = require('fs');
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then( (response) =>{
-        //console.log(response);
-        const readmecontent = genMarkDown(response);
-      writeToFile("./generateREADME/README.md", readmecontent);
+        console.log(response); 
+        const readmecontent = generateMarkdown(response);
+      fs.writeFileSync("READMESINO.md", readmecontent)
+    //   .then((answers) => fs.writeFileSync('index.html', generateHTML(answers)))
     })
 }
 

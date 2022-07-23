@@ -13,7 +13,43 @@ function renderLicenseSection(license) {}
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-  ${renderLicenseBadge(data)}
+  ${data.license}
+
+
+  ## Description
+  ${data.description}
+
+  ## Table of Contents
+  - [Description] (#description)
+  - [Installation] (#installation)
+  - [Usage] (#usage)
+  - [Contributions] (#constributions)
+  - [License] (#license)
+  - [Test] (#test)
+  - [Questions] (#questions)
+
+  ## Installation
+  ${data.installation}
+
+  ## Usage
+  ${data.usage}
+
+  ## Contributions
+  ${data.contributions}
+
+  ## License
+  ${data.license}
+  This project is protected under a MIT license. 
+
+  ## Test
+  ${data.test}
+
+  ## Questions
+  ${data.questions}
+
+  ${data.username}
+  ${data.email}
+
 
 `;
 }
