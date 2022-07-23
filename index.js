@@ -19,15 +19,6 @@ const fs = require('fs');
                 return "Please enter description of project."
             }},
         },
-        // {
-        //     type: 'input',
-        //     name: 'contents',
-        //     message: 'Include a table of contents.',
-        //     default:false,
-        //     validate:(contents) =>{if(contents){return true;} else{
-        //         return "Please enter whether you would like a Table of Contents."
-        //     }},
-        // },
         {
             type: 'input',
             name: 'installation',
@@ -87,14 +78,7 @@ const fs = require('fs');
             message: 'Provide your email.',
         },
         ];
-// TODO: Create an array of questions for user input
 
-// TODO: Create a function to write README file
-// fs.writeToFile('README.md', readMe(questions), (err) =>
-//       err ? console.error(err) : console.log('Commit logged!')
-// );
-
-// TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then( (response) =>{
         console.log(response); 
