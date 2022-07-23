@@ -1,9 +1,9 @@
-# lkj
-  Apache 2.0
+# SINO
+  MIT License
 
 
   ## Description
-  lkj
+  This app is designed to help you make tough decisions. When in doubt, SINO is here to help with life's daily complexities. Like where to eat or where to get coffee. Enjoy the ease of allowing your phone to decide your life for you. ¡SINO!
 
   ## Table of Contents
   - [Description] (#description)
@@ -15,25 +15,25 @@
   - [Questions] (#questions)
 
   ## Installation
-  ;lkj
+  To install the application, simply follow the link provided. 
 
   ## Usage
-  ;klj
+  For instructions on installation, follow the link provided. 
 
   ## Contributions
-  ;klj
+  Neto Longoria, JuanDe Jr, Raul Perez, Henry Conrad
 
   ## License
-  Apache 2.0
+  MIT License
   This project is protected under a MIT license. 
 
   ## Test
-  lkj
+  For instruction on tests, follow the link provided. www.sino.com/test
 
   ## Questions
-  lkj
+  For any questions about our application, please email us at the email below or visit our GitHub.
 
-  lkj
-  lkj
+  rmoreno162303
+  rmoreno162303@gmail.com
 
 
