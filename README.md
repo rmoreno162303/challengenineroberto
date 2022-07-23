@@ -8,6 +8,13 @@ Feel free to email Roberto Moreno with any questions. rmoreno162303@gmail.com
 
 
 ### Link to Video
+Included is a link demonstrating the funcionality of the application. 
 https://drive.google.com/file/d/1v9fTJrylVSOJKKcc0VaExkPHRosjmO6m/view?usp=sharing
+
+
+
+<br/>
+
+
 
 <img width="1440" alt="Screen Shot" src="https://user-images.githubusercontent.com/105377377/180622362-cc41d025-dc93-4e08-8bce-9ce0c74a5b3f.png">
